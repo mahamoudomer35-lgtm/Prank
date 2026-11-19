@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#000000">
+<meta name="description" content="AETHER — a fictional, private entertainment experience.">
+<title>Choose Operative | AETHER</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="assets/js/supabase.js"></script>
+<script src="assets/js/auth.js" defer></script>
+<script src="assets/js/navigation.js" defer></script>
+
+</head>
+<body data-protected="true">
+
+<header class="site-header">
+  <div class="header-left">
+    <button class="icon-btn" id="menu-toggle" aria-label="Open navigation" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+    <a class="brand" href="dashboard.html">AETHER<span>.</span></a>
+  </div>
+  <div class="header-right">
+    <button class="icon-btn" id="settings-toggle" aria-label="Open settings" aria-expanded="false"><i class="fa-solid fa-gear"></i></button>
+  </div>
+</header>
+<div class="sidebar-overlay" id="sidebar-overlay"></div>
+<aside class="sidebar" id="sidebar" aria-hidden="true">
+  <div class="sidebar-head"><a class="brand" href="dashboard.html">AETHER<span>.</span></a><button class="icon-btn" id="sidebar-close" aria-label="Close navigation"><i class="fa-solid fa-xmark"></i></button></div>
+  <nav class="sidebar-nav">
+    <a class="sidebar-link" data-nav href="dashboard.html"><i class="fa-solid fa-grid-2"></i> Dashboard</a>
+    <a class="sidebar-link" data-nav href="choose-operative.html"><i class="fa-solid fa-user-astronaut"></i> Operatives</a>
+    <a class="sidebar-link" data-nav href="dashboard.html#account"><i class="fa-regular fa-user"></i> My Account</a>
+    <a class="sidebar-link" href="assets/images/WhatsApp Image 2026-11-19 at 8.44.51 AM.jpeg" data-settings-info="Settings"><i class="fa-solid fa-sliders"></i> Settings</a>
+    <a class="sidebar-link" data-nav href="other.html"><i class="fa-regular fa-circle-question"></i> About</a>
+    <button class="sidebar-link logout" data-logout><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</button>
+  </nav>
+  <div class="sidebar-foot">AETHER EXPERIENCE · FICTIONAL PLATFORM</div>
+</aside>
+<div class="settings-pop" id="settings-menu">
+  <div class="eyebrow">PREFERENCES</div>
+  <button class="settings-item" data-settings-info="Account Information"><i class="fa-regular fa-id-card accent"></i> Account Information</button>
+  <button class="settings-item" data-settings-info="Notifications"><i class="fa-regular fa-bell accent"></i> Notifications</button>
+  <button class="settings-item" data-settings-info="Security"><i class="fa-solid fa-shield-halved accent"></i> Security</button>
+  <button class="settings-item" data-settings-info="About Platform"><i class="fa-solid fa-circle-info accent"></i> About Platform</button>
+</div>
+
+
+<main class="page-wrap">
+ <div class="page-intro"><div class="eyebrow">CHARACTER DIRECTORY</div><h1>Choose an operative.</h1><p>One featured fictional character. Profile details are playful and invented for this entertainment experience.</p></div>
+ <article class="panel profile-card">
+   <img class="profile-image" src="assets/images/WhatsApp Image 2026-11-19 at 8.44.51 AM.jpeg" alt="Featured fictional operative" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+   <div class="profile-image-fallback" hidden><i class="fa-solid fa-user-astronaut"></i></div>
+   <div class="profile-body"><span class="pill">FEATURED PROFILE</span><h2 style="margin-top:15px">NOVA</h2><p>Part-time strategist · Full-time coffee enthusiast</p><a class="btn" href="operative-info.html">VIEW PROFILE <i class="fa-solid fa-arrow-right"></i></a></div>
+ </article>
+</main>
+
+<footer class="footer-note">AETHER IS A FICTIONAL ENTERTAINMENT EXPERIENCE · ALL PROFILES AND CHALLENGES ARE IMAGINARY</footer>
+</body></html>

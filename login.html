@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#000000"><title>Restricted Access | AETHER</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="assets/js/supabase.js"></script><script src="assets/js/auth.js" defer></script>
+</head><body>
+<main class="auth-screen"><section class="panel auth-card">
+<div class="auth-brand">AETHER<span>.</span></div><div class="eyebrow">RESTRICTED ACCESS</div>
+<form id="login-form" novalidate>
+<div class="form-group"><label for="email">EMAIL ADDRESS</label><input id="email" name="email" type="email" autocomplete="username" placeholder="name@example.com" required></div>
+<div class="form-group"><label for="password">PASSWORD</label><input id="password" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" required></div>
+<button class="btn" type="submit"><i class="fa-solid fa-fingerprint"></i> AUTHENTICATE</button>
+<p id="login-message" class="form-message" role="status" aria-live="polite"></p>
+</form>
+<div class="auth-foot">AUTHORIZED TEST ACCOUNTS ONLY · AETHER FICTIONAL EXPERIENCE</div>
+</section></main></body></html>

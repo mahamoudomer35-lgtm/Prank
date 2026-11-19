@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#000000">
+<meta name="description" content="AETHER — a fictional, private entertainment experience.">
+<title>Dashboard | AETHER</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="assets/js/supabase.js"></script>
+<script src="assets/js/auth.js" defer></script>
+<script src="assets/js/navigation.js" defer></script>
+
+</head>
+<body data-protected="true">
+
+<header class="site-header">
+  <div class="header-left">
+    <button class="icon-btn" id="menu-toggle" aria-label="Open navigation" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+    <a class="brand" href="dashboard.html">AETHER<span>.</span></a>
+  </div>
+  <div class="header-right">
+    <button class="icon-btn" id="settings-toggle" aria-label="Open settings" aria-expanded="false"><i class="fa-solid fa-gear"></i></button>
+  </div>
+</header>
+<div class="sidebar-overlay" id="sidebar-overlay"></div>
+<aside class="sidebar" id="sidebar" aria-hidden="true">
+  <div class="sidebar-head"><a class="brand" href="dashboard.html">AETHER<span>.</span></a><button class="icon-btn" id="sidebar-close" aria-label="Close navigation"><i class="fa-solid fa-xmark"></i></button></div>
+  <nav class="sidebar-nav">
+    <a class="sidebar-link" data-nav href="dashboard.html"><i class="fa-solid fa-grid-2"></i> Dashboard</a>
+    <a class="sidebar-link" data-nav href="choose-operative.html"><i class="fa-solid fa-user-astronaut"></i> Operatives</a>
+    <a class="sidebar-link" data-nav href="dashboard.html#account"><i class="fa-regular fa-user"></i> My Account</a>
+    <a class="sidebar-link" href="#" data-settings-info="Settings"><i class="fa-solid fa-sliders"></i> Settings</a>
+    <a class="sidebar-link" data-nav href="other.html"><i class="fa-regular fa-circle-question"></i> About</a>
+    <button class="sidebar-link logout" data-logout><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</button>
+  </nav>
+  <div class="sidebar-foot">AETHER EXPERIENCE · FICTIONAL PLATFORM</div>
+</aside>
+<div class="settings-pop" id="settings-menu">
+  <div class="eyebrow">PREFERENCES</div>
+  <button class="settings-item" data-settings-info="Account Information"><i class="fa-regular fa-id-card accent"></i> Account Information</button>
+  <button class="settings-item" data-settings-info="Notifications"><i class="fa-regular fa-bell accent"></i> Notifications</button>
+  <button class="settings-item" data-settings-info="Security"><i class="fa-solid fa-shield-halved accent"></i> Security</button>
+  <button class="settings-item" data-settings-info="About Platform"><i class="fa-solid fa-circle-info accent"></i> About Platform</button>
+</div>
+
+
+<main class="page-wrap">
+  <div class="page-intro"><div class="eyebrow">PRIVATE EXPERIENCE / OVERVIEW</div><h1>Welcome to AETHER.</h1><p>A quiet space for fictional profiles, friendly challenges, and shared moments. Everything here is designed for harmless entertainment.</p></div>
+  <section class="stack" aria-label="Dashboard actions">
+    <a class="card action-card" href="choose-operative.html"><span class="card-icon"><i class="fa-solid fa-user-astronaut"></i></span><span><h2>CHOOSE AN OPERATIVE</h2><p>Meet the featured character and explore their fictional profile.</p></span><i class="fa-solid fa-arrow-right arrow"></i></a>
+    <a class="card action-card" href="become-operative.html"><span class="card-icon"><i class="fa-solid fa-id-badge"></i></span><span><h2>I WANT TO BECOME AN OPERATIVE</h2><p>Send a friendly application to join the AETHER experience.</p></span><i class="fa-solid fa-arrow-right arrow"></i></a>
+    <a class="card action-card" href="other.html"><span class="card-icon"><i class="fa-solid fa-compass"></i></span><span><h2>OTHER</h2><p>Learn about the platform and find general information.</p></span><i class="fa-solid fa-arrow-right arrow"></i></a>
+  </section>
+  <section id="account" class="panel" style="margin-top:22px"><div class="eyebrow">ACCOUNT</div><h2>My AETHER session</h2><p>Your access is managed by Supabase Authentication.</p><button class="btn danger-btn" data-logout><i class="fa-solid fa-arrow-right-from-bracket"></i> LOG OUT</button></section>
+</main>
+
+<footer class="footer-note">AETHER IS A FICTIONAL ENTERTAINMENT EXPERIENCE · ALL PROFILES AND CHALLENGES ARE IMAGINARY</footer>
+</body></html>
