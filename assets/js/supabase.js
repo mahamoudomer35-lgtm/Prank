@@ -4,8 +4,8 @@
   Never put a service_role key or any secret key in browser code.
 */
 (() => {
-  const SUPABASE_URL = "sb_publishable_EHGKhBIYVD6pjs-ThrDDeQ_6YXOFNwR";
-  const SUPABASE_ANON_KEY = "https://ldtvnxdjlhghalsvrgfy.supabase.co";
+  const SUPABASE_URL = "https://ldtvnxdjlhghalsvrgfy.supabase.co";
+  const SUPABASE_ANON_KEY = "sb_publishable_EHGKhBIYVD6pjs-ThrDDeQ_6YXOFNwR";
 sb_publishable_EHGKhBIYVD6pjs-ThrDDeQ_6YXOFNwRYOUR_SUPABASE_URL
   const configured = !SUPABASE_URL.includes("YOUR_") &&
                      !SUPABASE_ANON_KEY.includes("YOUR_");
